@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu primeiro programa...t</title>
+    <title>Meu primeiro programa</title>
     <style>
         body {
             background-color: black;
@@ -12,20 +12,22 @@
         }
         h1 {
             color: aliceblue;
+            
         }
         p {
             color: white;
+            font-family: Arial;
         }
     </style>
 </head>
 <body>
-    <h1>Olá, mundo!</h>
+    <h1>Olá, mundo!</h1>
     <p>Já me livrei da maldição!!</p>
     <script>
-       var n1 = Numberparseint(window.prompt('Digite um número: '))
-       var n2 = Numberparseint(window.prompt('Digite outro número: '))//Conversão de string pra int
+       var n1 = Number(window.prompt('Digite um número: ')) // Conversão correta
+       var n2 = Number(window.prompt('Digite outro número: '))
        var s = n1 + n2
-       window.alert('A soma dos valores é ' + s)
+       window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`)
     </script>
 </body>
 </html>
