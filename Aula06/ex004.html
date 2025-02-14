@@ -3,18 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estudando Variáveis</title>
+    <title>Barra da Internet</title>
     <style>
         body {
-            font: normal 20pt Arial;
+            background-color: blueviolet;
+            color: white;
+            font: normal 20pt arial;
+        }
+        h1 {
+            color: aliceblue;
+            font-family: aliceblue;
+        }
+        p {
+            color: brown;
+            font-family: normal 10pt arial;
         }
     </style>
 </head>
 <body>
+    <h1>Olá, mundo!</h1>
+    <p>Já me livrei da maldição!!</p>
     <script>
-        var nome = window.prompt('Qual é o seu nome?')
-        document.write(`Olá, <strong>${nome}</strong>! O seu nome tem ${nome.length} letras<br/>`)
-        document.write(`Seu nome em maiúsculas é ${nome.toUpperCase()}`)
+        var nome = window.prompt('Qual seu nome?')
+        var idade = window.prompt('Qual sua idade?')
+        document.write(`Meu nome é <strong>${nome}</strong> e tenho ${idade} anos de idade.`)
     </script>
     
 </body>
