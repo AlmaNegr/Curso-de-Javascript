@@ -17,7 +17,15 @@
     </style>
 </head>
 <body>
-    <div id="area">
-    interaja...
+    <div id="area" onclick="clicar()">
+        Interaja...
+    </div>
+
+    <script>
+        function clicar() {
+            var a = window.document.getElement("area")
+            a.inner = "Clicou"
+        }
+    </script>
 </body>
 </html>
