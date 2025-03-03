@@ -1,17 +1,17 @@
-var hoje = new Date
-var diasem = hoje.getDay()
+var dia = new Date
+var hoje = dia.getDay()
+hoje = 7
 /*
-0 - Domingo
-1 - Segunda
-2 - Terça
-3 - Quarta
-4 - Quinta
-5 - Sexta
-7 - Sábado
+domingo - 0
+segunda - 1
+terça - 2
+quarta - 3
+quinta - 4
+sexta - 5
+sábado - 6
 */
-diasem = 6
-console.log(diasem)
-switch (diasem) {
+console.log(hoje)
+switch(hoje) {
     case 0:
         console.log('Domingo')
         break
@@ -25,16 +25,14 @@ switch (diasem) {
         console.log('Quarta')
         break
     case 4:
-        console.log('quinta')
+        console.log('Quinta')
         break
     case 5:
-        console.log('sexta')
+        console.log('Sexta')
         break
     case 6:
         console.log('Sábado')
         break
     default:
-        console.log('[Erro] dia inválido!')
-        break
+        console.log('[erro] dia inválido.')
 }
-
