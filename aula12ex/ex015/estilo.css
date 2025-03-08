@@ -1,9 +1,14 @@
 body {
-    background: rgb(82, 82, 249);
-    font: normal 15pt arial;
+    background: linear-gradient(120deg, rgb(82, 82, 249), rgb(50, 50, 200));
+    font: normal 15pt Arial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
 }
 
-header {   
+header {
     color: white;
     text-align: center;
 }
@@ -12,13 +17,19 @@ section {
     background: white;
     border-radius: 10px;
     padding: 15px;
+    max-width: 90vw;
     width: 500px;
     margin: auto;
-    box-shadow: 3px 3px 10px rgba(3, 1, 1, 0.57);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+p {
+    margin-bottom: 10px;
 }
 
 footer {
     color: white;
     text-align: center;
     font-style: italic;
+    margin-top: 20px;
 }
