@@ -1,0 +1,24 @@
+body {
+    background-color: gray;
+}
+
+header {
+    background-color: black;
+    color: yellow;
+    text-align: center;
+    font: 10pt arial;
+}
+
+div p {
+    color: white;
+    background-color: red;
+}
+
+div#res {
+    background-color: blue;
+}
+
+button {
+    background: blue;
+    border-radius: 10px;
+}
