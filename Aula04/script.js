@@ -1,7 +1,7 @@
-function clicar() {
-    var p = document.getElementsByTagName('p')
-    var dp = document.querySelector('div#res')
-    p[0].innerHTML = "Texto alterado para: "
-    dp.innerHTML = "Estudo de Javascript"
-    dp.style.color = "white"
+function resultado() {
+    var nome = document.getElementsByName('nome')[0].value
+    var idade = document.getElementsByName('idade')[0].value
+    res.innerHTML = `Meu nome é ${nome} e eu tenho ${idade} de idade.`
+}
+if (nome == 'alisson') {
 }
