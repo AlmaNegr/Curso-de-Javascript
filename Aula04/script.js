@@ -4,4 +4,5 @@ function resultado() {
     res.innerHTML = `Meu nome é ${nome} e eu tenho ${idade} de idade.`
 }
 if (nome == 'alisson') {
+    
 }
