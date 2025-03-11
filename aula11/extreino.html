@@ -3,12 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DETRAN</title>
+    <title>Dentran</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Sistema de Multas</h1>
-    Velocidade: <input type="number" name="txtvel1" id="txtvel1"> km/h
-    <input type="button" value="Verificar" onclick="calcular()">
-    <div id></div>
+    <h1>Sistemas de Multas</h1>
+    <p>Foto-sensor</p>
+
+    <div>
+       Velocidade: <input type="number" name="txtvel" id="txtvel">Km/m
+       <input type="button" value="sensor()" onclick="sensor()">
+    </div>
+
+    <div id="res">
+        <br>
+        Resultado...
+    </div>
+    <script src="script.js"></script>
+
 </body>
 </html>
