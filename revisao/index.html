@@ -1,24 +1,111 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Título de página - Projeto</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Título da Página — Projeto</title>
+  <meta name="description" content="Breve descrição da página (SEO)." />
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" />
+
+  <!-- CSS principal -->
+  <link rel="stylesheet" href="estilo.css" />
 </head>
 <body>
-    <header class="banner">
-        <div class="container">
-            <a href="/" class="logo" aria-label="Ir para página principal">Minha Marca</a>
-            <nav role="navigation" aria-label="Navegação principal">
-                <ul class="nav-list">
-                    <li><a href="#inicio">Início</a></li>
-                    <li><a href="#sobre">sobre</a></li>
-                    <li><a href="#servicos">Serviços</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    
+
+  <!-- Cabeçalho com navegação principal -->
+  <header role="banner">
+    <div class="container">
+      <a href="/" class="logo" aria-label="Ir para a página inicial">MinhaMarca</a>
+
+      <nav role="navigation" aria-label="Navegação principal">
+        <ul class="nav-list">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Área principal: conteúdo único da página -->
+  <main role="main" class="container">
+    <!-- Seção de destaque / hero -->
+    <section id="inicio" aria-labelledby="hero-title" class="hero">
+      <h1 id="hero-title">Título principal do site</h1>
+      <p>Subtítulo curto que resume o que você oferece.</p>
+      <a href="#contato" class="btn">Fale conosco</a>
+    </section>
+
+    <!-- Seção sobre -->
+    <section id="sobre" aria-labelledby="sobre-title">
+      <h2 id="sobre-title">Sobre</h2>
+      <p>Texto descritivo sobre a empresa, projeto ou pessoa.</p>
+    </section>
+
+    <!-- Lista de artigos / postagens / projetos -->
+    <section id="servicos" aria-labelledby="servicos-title">
+      <h2 id="servicos-title">Serviços / Projetos</h2>
+
+      <article aria-labelledby="projeto-1-title" class="card">
+        <h3 id="projeto-1-title">Projeto / Serviço 1</h3>
+        <p>Descrição curta do projeto.</p>
+        <a href="/projeto-1">Ler mais</a>
+      </article>
+
+      <article aria-labelledby="projeto-2-title" class="card">
+        <h3 id="projeto-2-title">Projeto / Serviço 2</h3>
+        <p>Descrição curta do projeto.</p>
+        <a href="/projeto-2">Ler mais</a>
+      </article>
+    </section>
+
+    <!-- Barra lateral opcional -->
+    <aside role="complementary" aria-labelledby="sidebar-title">
+      <h2 id="sidebar-title">Informações rápidas</h2>
+      <ul>
+        <li>Dado 1</li>
+        <li>Dado 2</li>
+      </ul>
+    </aside>
+
+    <!-- Formulário de contato -->
+
+    <section id="contato" aria-labelledby="contato-title">
+      <h2 id="contato-title">Contato</h2>
+      <form action="/enviar" method="post" novalidate>
+        <label for="nome">Nome</label>
+        <input id="nome" name="nome" type="text" required />
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required />
+
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer role="contentinfo">
+    <div class="container">
+      <p>© <span id="ano"></span> MinhaMarca. Todos os direitos reservados.</p>
+      <nav aria-label="Links do rodapé">
+        <ul>
+          <li><a href="/privacidade">Política de Privacidade</a></li>
+          <li><a href="/termos">Termos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Script simples para preencher o ano no rodapé -->
+  <script>
+    document.getElementById('ano').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
