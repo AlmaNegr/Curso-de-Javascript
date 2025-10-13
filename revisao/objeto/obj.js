@@ -1,11 +1,11 @@
 const pessoa = {
     nome: 'Alisson',
     idade: 34,
-    profissao: 'Desenvolvedor'
+    profissao: "Desenvolvedor Web"
 }
 
-pessoa.club = 'caixa'
-delete pessoa.nome
-console.log(pessoa)
+pessoa.cidade = 'Fortaleza'
 
-console.log(pessoa.club)
+delete pessoa.idade
+
+console.log(pessoa)

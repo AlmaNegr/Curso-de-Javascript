@@ -1,16 +1,12 @@
-function dobro(num) {
-    let dobrado = num.map((n) => {
-        return n * 2
-    })
-
-    return dobrado
+function soma(a, b) {
+    console.log(a + b);
+    return;
 }
 
-const nome = (nome, idade) => {
-    return `Meu nome é ${nome} e tenho ${idade} anos de idade.`
+function nome(name) {
+    console.log(name);
+    return;
 }
 
-let numero = [1, 2, 3, 4, 5]
-console.log(nome("Alisson", 34))
-console.log(dobro(numero))
-console.log(numero.reverse())
+soma(1, 5)
+nome('Alisson')
