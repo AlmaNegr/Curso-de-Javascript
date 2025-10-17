@@ -9,5 +9,18 @@ for (let i = 0; i < frutas.length; i ++) {
    // console.log(fruta)
 //}
 
+let x = 0;
+let p = 0;
+
+do {
+    console.log(p)
+    p++
+} while (p < 5)
+
+while (x < 5) {
+    x++
+    console.log(x)
+}
+
 
 
